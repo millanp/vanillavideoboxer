@@ -1,29 +1,42 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
-input, iframe {
+
+input,
+iframe {
     margin: 4px;
 }
+
 * {
     z-index: 2;
 }
+
+#textboxForm {
+    position: absolute;
+}
+
 #videoFrame {
     z-index: 0;
 }
+
 #videoCover {
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 1;
 }
+
 #urlForm {
     max-width: 400px;
 }
+
 .coverbox {
     z-index: 1 !important;
 }
+
 .fa {
     font-size: 1.25em;
     padding: 0.25em;
@@ -31,24 +44,29 @@ input, iframe {
     border-radius: 2px;
     color: white;
 }
+
 .selection-square {
-  width: 30px;
-  height: 30px;
-  border: 5px solid rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-  position: absolute;
-  z-index: 2;
-/*   background-image: url(http://pre08.deviantart.net/4c4b/th/pre/f/2011/094/d/a/drawing_grid_by_blossomhillstables-d3d70y5.png);
+    width: 30px;
+    height: 30px;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    /*   background-image: url(http://pre08.deviantart.net/4c4b/th/pre/f/2011/094/d/a/drawing_grid_by_blossomhillstables-d3d70y5.png);
   background-repeat: repeat;
   background-size: 519px 384.5px; */
 }
-.selection-square:focus, .selection-square:active {
-  outline: none;
-  z-index: 3;
-}
-.selection-square:focus {
-  background-color: rgba(0, 255, 0, 0.3);
-}
+
+.selection-square:focus,
 .selection-square:active {
-  background-color: rgba(255, 165, 0, 0.3);
+    outline: none;
+    z-index: 3;
+}
+
+.selection-square:focus {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.selection-square:active {
+    background-color: rgba(255, 165, 0, 0.3);
 }

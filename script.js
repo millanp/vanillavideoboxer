@@ -115,10 +115,14 @@ $(document).ready(function() {
             newRow.attr('data-rectid', rectId);
             var header = $('<th scope="row"></th>');
             header.text(rectId);
-            var textbox = $('<input type="text">');
+            var textbox = $('<input type="text" data-role="tagsinput">');
             textbox.attr('name', rectId);
             newRow.append(header).append(textbox);
             els.textboxes.append(newRow);
+            view.makeTagsInput(textbox);
+        },
+        makeTagsInput: function(input) {
+            input.tagsinput('refresh');
         },
         applyRectModifiers: function(newRect, firstBox) {
             var number = $('<div class="fa"></div>');
@@ -270,6 +274,7 @@ $(document).ready(function() {
                     }
                 },
             });
+            $('#textboxForm').show();
         },
         init: function() {
             this.bindEvents();

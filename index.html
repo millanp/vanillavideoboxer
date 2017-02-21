@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js" integrity="sha256-tQ3x4V2JW+L0ew/P3v2xzL46XDjEWUExFkCDY0Rflqc=" crossorigin="anonymous"></script>
     <script src="https://youtube.com/iframe_api"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" integrity="sha256-uKEg9s9/RiqVVOIWQ8vq0IIqdJTdnxDMok9XhiqnApU=" crossorigin="anonymous" />
+    
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    
     <title>Video boxer</title>
 </head>
 
@@ -21,10 +24,14 @@
     </form>
     <div id="videoCover"></div>
     <div id="videoFrame"></div>
-    <form id="textboxForm">
+    <form id="textboxForm" style="display: none">
         <table id="textbox-container" class="table table-striped">
-
+            <tr>
+                <th>Box ID</th>
+                <th>Things to watch for</th>
+            </tr>
         </table>
+        <input type="submit" class="btn btn-primary" value="Create triggers">
     </form>
 </body>
 
